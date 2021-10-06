@@ -1,0 +1,29 @@
+/* .container{
+    position: relative;
+} */
+
+.container{
+    width: 110px;
+    height: 90px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 7px;
+    z-index: 2;
+
+}
+
+.mainCard{
+    width: 90px;
+    height: 90px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.backCard{
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 7px;
+    z-index: 3;
+    top: 0;
+}
