@@ -6,14 +6,13 @@
 import classes from "./Card.module.css";
 
 function Card(props) {
-  return <div className={classes.container}>{props.children}</div>;
-// return(
-//     <>
-//         <div className={classes.container}></div>
-//         <div className={classes.mainCard}></div>
-//         <div className={classes.backCard}></div>
-//     </>
-// ); 
+  // return <div className={classes.container}>{props.children}</div>;
+  return (
+    <>
+    <div className={classes.container}>{props.children}</div>
+    {/* <div className={classes.top}></div> */}
+    </>
+  )
 
 }
 

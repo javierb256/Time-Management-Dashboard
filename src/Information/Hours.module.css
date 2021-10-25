@@ -4,6 +4,12 @@ span{
     float: right;
     color: hsl(236, 100%, 87%);
 }
+
+img{
+    position: relative;
+    width: 20px;
+    left: 0px;
+}
 h3{
     margin-top: -3px;
     color: white;
@@ -27,9 +33,21 @@ h6{
 }
 
 .container{
+    position: relative;
     padding: 1px 12px;
 }
 
 .previous{
     margin-top: -18px;
+}
+
+.background{
+    background-color: yellow;
+    border-radius: 7px;
+    height: 100px;
+    width: 110px;
+}
+
+.cardDiv{
+    margin-top: 20px;
 }

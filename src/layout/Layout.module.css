@@ -1,0 +1,16 @@
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.cardContainer{
+    max-width: 90%;
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+}
