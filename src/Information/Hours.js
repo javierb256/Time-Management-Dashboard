@@ -12,30 +12,14 @@ import classes from "./Hours.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 
-import images from "../images/icon-exercise.svg";
+import work from "../images/icon-work.svg";
+import play from "../images/icon-play.svg";
+import study from "../images/icon-study.svg";
+import exercise from "../images/icon-exercise.svg";
+import social from "../images/icon-social.svg";
+import selfCare from "../images/icon-self-care.svg";
 
-const background = ["orange", "blue", "pink", "green", "purple", "yellow"]
-
-// const background = [
-//   {
-//     color: "orange"
-//   },
-//   {
-//     color: "blue"
-//   },
-//   {
-//     color: "pink"
-//   },
-//   {
-//     color: "green"
-//   },
-//   {
-//     color: "purple"
-//   },
-//   {
-//     color: "yellow"
-//   }
-// ]
+const background = [work, play, study, exercise, social, selfCare]
 
 function Hours() {
   return (
@@ -43,11 +27,10 @@ function Hours() {
       {data.map((element, index) => {
         return (
           <div className={classes.background}>
-            {/* <div className={classes.overlay}><img src={images} /></div>*/}
+            <div className={classes.icon}><img src={background[index]} alt="card icon"/></div>
             <div className={classes.cardDiv}>
-              <Card className={classes.push}>
-                <div className={classes.container}>
-                  {/* <div className={classes.top}></div> */}
+              <Card>
+                <div className={classes.cardInformation}>
                   <h5>
                     {element.title}
                     <span>
@@ -59,7 +42,9 @@ function Hours() {
                     Last Week - {element.timeframes.daily.previous}hrs
                   </h6>
                   {/* <div className={classes.top}></div> */}
+
                 </div>
+
               </Card>
             </div>
           </div>

@@ -10,7 +10,6 @@ function Card(props) {
   return (
     <>
     <div className={classes.container}>{props.children}</div>
-    {/* <div className={classes.top}></div> */}
     </>
   )
 

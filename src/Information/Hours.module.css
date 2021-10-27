@@ -5,21 +5,17 @@ span{
     color: hsl(236, 100%, 87%);
 }
 
-img{
-    position: relative;
-    width: 20px;
-    left: 0px;
-}
+
 h3{
     margin-top: -3px;
     color: white;
     font-family: 'Rubik', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 200;
 }
 h5{
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
@@ -28,26 +24,58 @@ h6{
     margin-top: -7px;
     color: hsl(236, 100%, 87%);
     font-family: 'Rubik', sans-serif;
-    font-size: 0.4rem;
+    font-size: 0.7rem;
     font-weight: 300;
 }
 
-.container{
-    position: relative;
-    padding: 1px 12px;
+img{
+    margin-top: -4px;
+    margin-right: 10px;
+    /* width: 50px; */
+    height: 60px;
 }
 
-.previous{
-    margin-top: -18px;
+.icon{
+    position: absolute;
+    overflow-y: hidden;
+    right: 0;
+    z-index: -1;
 }
-
 .background{
-    background-color: yellow;
-    border-radius: 7px;
-    height: 100px;
-    width: 110px;
+    position: relative;
+    border-radius: 12px;
+    height: 50px;
+    z-index: -2;
 }
 
 .cardDiv{
-    margin-top: 20px;
+    margin-top: 35px;
 }
+
+.cardInformation{
+    padding: 1px 20px;
+}
+
+.previous{
+    margin-top: -45px;
+}
+
+.background:nth-child(1){
+    background-color: hsl(15, 100%, 70%);
+}
+.background:nth-child(2){
+    background-color: hsl(195, 74%, 62%);
+}
+.background:nth-child(3){
+    background-color: hsl(348, 100%, 68%);
+}
+.background:nth-child(4){
+    background-color: hsl(145, 58%, 55%);
+}
+.background:nth-child(5){
+    background-color: hsl(264, 64%, 52%);
+}
+.background:nth-child(6){
+    background-color: hsl(43, 84%, 65%);
+}
+
