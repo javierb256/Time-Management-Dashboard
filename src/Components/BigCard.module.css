@@ -2,7 +2,6 @@ h6{
     margin-bottom: 0;
 }
 ul{
-    margin-top: -15px;
     color: white;
     list-style-type: none;
     font-family: 'Rubik', sans-serif;
@@ -48,6 +47,9 @@ li:hover{
 }
 .userInformation{
     margin-top: 30px;
+}
+.userInformation > p{
+    margin-top: 0;
 }
 .username{
     font-family: 'Rubik', sans-serif;

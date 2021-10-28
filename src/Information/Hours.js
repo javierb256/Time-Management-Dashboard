@@ -30,7 +30,7 @@ function Hours() {
             <div className={classes.icon}><img src={background[index]} alt="card icon"/></div>
             <div className={classes.cardDiv}>
               <Card>
-                <div className={classes.cardInformation}>
+                <div className={classes.cardInformation} >
                   <h5>
                     {element.title}
                     <span>
