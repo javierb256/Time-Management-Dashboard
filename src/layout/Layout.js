@@ -11,7 +11,7 @@ import classes from "../layout/Layout.module.css";
 function Layout() {
   return (
     <div className={classes.mainContainer}>
-      <div>
+      <div className={classes.userContainer}>
         <User />
       </div>
       <div className={classes.hoursContainer}>

@@ -28,7 +28,7 @@ h6{
     font-weight: 300;
 }
 
-img{
+.iconImage{
     margin-top: -4px;
     margin-right: 10px;
     /* width: 50px; */
@@ -83,3 +83,26 @@ img{
     background-color: hsl(43, 84%, 65%);
 }
 
+@media screen and (max-width: 767.98px){
+    .background{
+        width: 93%;
+        margin: auto;
+    }
+
+    .timeContainer{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .previous{
+        margin-top: 21px;
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1rem;
+        margin-bottom: 9px;
+    }
+    .ellips{
+        font-size: 1.3rem;
+    }
+}

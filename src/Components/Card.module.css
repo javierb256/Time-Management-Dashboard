@@ -1,7 +1,9 @@
 
 .container{
-    width: 200px;
-    height: 150px;
+    /* max-width: 200px; */
+    /* width: 200px; */
+    width: 170px;
+    height: 140px;
     background-color: hsl(235, 46%, 20%);
     border-radius: 10px;
     z-index: 6;
@@ -10,4 +12,10 @@
 
 .container:hover{
     background-color: hsl(235, 45%, 61%);
+}
+
+@media screen and (max-width: 767.98px) {
+    .container{
+        width: 100%;
+    }
 }
