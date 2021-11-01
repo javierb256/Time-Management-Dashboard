@@ -11,6 +11,7 @@ li {
   font-size: 0.8rem;
   font-weight: 100;
   margin-bottom: 15px;
+  color: hsl(235, 45%, 61%);
 }
 
 li:hover {
@@ -72,7 +73,7 @@ li:hover {
 .username {
   font-family: "Rubik", sans-serif;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
@@ -81,26 +82,47 @@ li:hover {
     max-width: 93%;
     margin: auto;
     overflow: hidden;
-    height: 300px;
+    height: 212px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
   }
 
   .userContent {
     flex-direction: row;
     border-radius: 20px;
+    height: 36%;
   }
 
-  .ul {
-    display: inline;
+  ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5px 20px;
+      /* background-color: red; */
+  }
+
+  li{
+      font-size: 1.3rem;
+      /* background-color: red;
+      display: inline;
+      width: 32%;
+      float: left; */
   }
 
   .profilePic {
     border-radius: 100%;
+    width: 90%;
+    max-width: 70px;
   }
 
   .imageContainer{
       margin-right: 25px;
-      margin-top: 21px;
-      width: 37%;
+      /* margin-top: 21px; */
+      margin-top: 13px;
+      width: 25%;
+  }
+  .userInformation{
+      width: 70%;
   }
   
 }
@@ -108,5 +130,9 @@ li:hover {
 @media screen and (max-width: 320px){
     .profilePic{
         width: 80px;
+    }
+
+    .imageContainer{
+        margin-right: 35px;
     }
 }

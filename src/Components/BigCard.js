@@ -21,16 +21,13 @@ function BigCard() {
     // </div>
 
     <div className={classes.userContainer}>
-      <div>
-        <div className={classes.userContent}>
-            <div className={classes.imageContainer}>
-            <img src={profile} alt="user card" className={classes.profilePic} />
-
-            </div>
-          <div className={classes.userInformation}>
-            <h6>Report for</h6>
-            <p className={classes.username}>Jeremy Robison</p>
-          </div>
+      <div className={classes.userContent}>
+        <div className={classes.imageContainer}>
+          <img src={profile} alt="user card" className={classes.profilePic} />
+        </div>
+        <div className={classes.userInformation}>
+          <h6>Report for</h6>
+          <p className={classes.username}>Jeremy Robison</p>
         </div>
       </div>
       <div className={classes.timeFilter}>

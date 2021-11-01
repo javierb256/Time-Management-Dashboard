@@ -95,8 +95,11 @@ h6{
         justify-content: space-between;
     }
     .previous{
-        margin-top: 21px;
+        margin-top: 10px;
         font-size: 1rem;
+    }
+    h3{
+        font-size: 2rem;
     }
     h5{
         font-size: 1rem;
