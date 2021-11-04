@@ -4,10 +4,8 @@ span{
     float: right;
     color: hsl(236, 100%, 87%);
 }
-
-
 h3{
-    margin-top: -3px;
+    margin-top: -5px;
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
@@ -19,7 +17,6 @@ h5{
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
-
 h6{
     margin-top: -7px;
     color: hsl(236, 100%, 87%);
@@ -27,15 +24,12 @@ h6{
     font-size: 0.7rem;
     font-weight: 300;
 }
-
 .iconImage{
     margin-top: -4px;
     margin-right: 10px;
-    /* width: 50px; */
     height: 60px;
     z-index: 3;
 }
-
 .icon{
     position: absolute;
     overflow-y: hidden;
@@ -48,8 +42,6 @@ h6{
     height: 50px;
     z-index: 1;
 }
-
-
 .cardDiv{
     position: relative;
     margin-top: 35px;
@@ -59,9 +51,11 @@ h6{
 .cardInformation{
     padding: 1px 20px;
 }
-
 .previous{
     margin-top: -45px;
+}
+.ellips{
+    cursor: pointer;
 }
 
 .background:nth-child(1){
@@ -82,7 +76,6 @@ h6{
 .background:nth-child(6){
     background-color: hsl(43, 84%, 65%);
 }
-
 @media screen and (max-width: 767.98px){
     .background{
         width: 93%;

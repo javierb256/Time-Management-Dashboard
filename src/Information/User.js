@@ -1,19 +1,54 @@
-//User information
+//displays the user information and filter to change times
+import classes from "../Information/User.module.css";
+import profile from "../images/image-jeremy.png";
 
-import BigCard from "../Components/BigCard";
+function User({ setTime }) {
+  function dailyActive() {
+    document.getElementById("daily").style.color = "white";
+    document.getElementById("weekly").style.color = "hsl(235, 45%, 61%)";
+    document.getElementById("monthly").style.color = "hsl(235, 45%, 61%)";
+    setTime("daily");
+  }
 
-//TODO 1: display single user card w/out data
-//TODO 2: populate card with JSON data
-//TODO 3: add 3 different categories at buttom of card
-//TODO 4: onclick change data on all cards even small cards
-//TODO 5: make sure User card shrinks on mobile device
+  function weeklyActive() {
+    document.getElementById("weekly").style.color = "white";
+    document.getElementById("daily").style.color = "hsl(235, 45%, 61%)";
+    document.getElementById("monthly").style.color = "hsl(235, 45%, 61%)";
+    setTime("weekly");
+  }
 
-function User(){
-    return (
-        <BigCard >
-            
-        </BigCard>
-    );
+  function monthlyActive() {
+    document.getElementById("daily").style.color = "hsl(235, 45%, 61%)";
+    document.getElementById("weekly").style.color = "hsl(235, 45%, 61%)";
+    document.getElementById("monthly").style.color = "white";
+    setTime("monthly");
+  }
+  return (
+    <div className={classes.userContainer}>
+      <div className={classes.userContent}>
+        <div className={classes.imageContainer}>
+          <img src={profile} alt="user card" className={classes.profilePic} />
+        </div>
+        <div className={classes.userInformation}>
+          <h6>Report for</h6>
+          <p className={classes.username}>Jeremy Robison</p>
+        </div>
+      </div>
+      <div className={classes.timeFilter}>
+        <ul>
+          <li onClick={dailyActive} id="daily">
+            Daily
+          </li>
+          <li onClick={weeklyActive} id="weekly">
+            Weekly
+          </li>
+          <li onClick={monthlyActive} id="monthly">
+            Monthly
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default User;
