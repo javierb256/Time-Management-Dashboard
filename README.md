@@ -29,9 +29,7 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://javierb256.github.io/Time-Management-Dashboard/)
 
 ### Built with
 
